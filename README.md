@@ -1,6 +1,6 @@
 #ABOUT
 
-		Three-app cms is about using the framework Ionic you are able to login, once logged in your able to see the 
+		Threeapp-cms is about using the framework Ionic you are able to login, once logged in your able to see the 
 	other users and are able to delete users or add new users to the database. This application uses Ionic framework 
 	and uses the TypeScript in order to function on various software environmentssuch as Android, iOS, Windows Phone,
 	Web, Desktop & Progressive Web Apps(PWA).
