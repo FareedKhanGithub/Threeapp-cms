@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>       <!-- above or below content often accompanied by footer or header, in this case header which is above  -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>                                    <!-- the stuff on the top of the applcaiton -->
+    </ion-buttons>
+    <ion-title>login Social Security Number </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>        <!-- a playable area to use html (only once per file) -->
+
+  <ion-item *ngIf="errorMessage" color="danger">{{ errorMessage }}</ion-item>             <!--angular if statement,errorMessage is a keyword these are keywords there has to eb a way of finding these words -->
+                                                                                                         <!--cannot create something from nothing-->
+                                                              <!--this is defined in the login.page.ts file as a string that gets its results from the response of the user.    -->
+
+
+
+  <ion-item>
+    <ion-label position="floating">Username</ion-label>         <!--   https://www.w3schools.com/cssref/pr_class_position.asp       w3 school          this is floating for the box  -->
+    <ion-input type="text" name="username" [(ngModel)]="user.username"></ion-input>                       <!-- user.username is file and method in that  -->
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>             <!-- https://docs.angularjs.org/api/ng/directive/ngModel  -->
+    <ion-input type="password" name="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+  <ion-button color="dark" expand="full" (click)="onSubmit()">Submit</ion-button>       <!-- keep it lower case you tool, these are not bootstrap colors-->
+
+                    <!--ion-button color  is considered like documentation trigger line, so therefore -->
+                        <!--      https://ionicframework.com/docs/api/button                                  -->
+
+              <!--https://medium.com/@paulstelzer/ionic-4-how-to-add-more-colors-and-use-them-as-color-in-buttons-and-more-7175ab4ae4e7 on the three baasic coolors in  -->
+
+
+
+</ion-content>
